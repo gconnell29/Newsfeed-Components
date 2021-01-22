@@ -86,6 +86,15 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+  title: 'New Years Eve Party',
+    date: 'Dec 31st, 2021',
+    firstParagraph: `Funk Master Flex Performing`,
+
+    secondParagraph: `Obama is going to be there for some reason`,
+
+    thirdParagraph: `free drinks all night for everyone. We don't care about losing money.`
   }
 ];
 
