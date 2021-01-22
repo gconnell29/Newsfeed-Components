@@ -96,17 +96,32 @@ const data = [
 
   function articleMaker(articleObj) {
     let article = document.createElement('div');
-    article.classList.add = ('article');
+    article.classList.add('article');
     let h2 = document.createElement('h2');
     let date = document.createElement('p');
+    let para1 = document.createElement('p');
+    let para2 = document.createElement('p');
+    let para3 = document.createElement('p');
+    let expand = document.createElement('span');
     date.classList.add('date');
+    expand.classList.add('expandButton');
     h2.textContent = articleObj.title;
     date.textContent = articleObj.date;
+    para1.textContent = articleObj.firstParagraph;
+    para2.textContent = articleObj.secondParagraph;
+    para3.textContent = articleObj.thirdParagraph;
+    expand.textContent = '+';
+    expand.addEventListener('click', (e) => {
+      article.classList.toggle('article-open')
+    });
     article.appendChild(h2);
     article.appendChild(date);
+    article.appendChild(para1);
+    article.appendChild(para2);
+    article.appendChild(para3);
+    article.appendChild(expand);
     return article;
   }
-  // console.log("test")
   /*<div class="article">
   <h2>{title of the article}</h2>
   <p class="date">{date of the article}</p>
